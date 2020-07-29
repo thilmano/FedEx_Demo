@@ -1,0 +1,20 @@
+{
+    "request": {
+        "urlPattern" : "/api/v2/tracking",
+    	"method" : "POST",
+			  "bodyPatterns" : [
+		{
+		"contains" : "4444"
+		}
+	  ]
+    },
+    "response": {
+		"bodyFileName": "responseBody_3.json",
+        "transformers": ["response-template"],
+	
+	"headers" : {
+      "Content-Type" : "application/json"
+				}
+	   
+    }
+}

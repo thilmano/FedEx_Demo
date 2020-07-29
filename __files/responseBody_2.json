@@ -1,0 +1,19 @@
+{
+	"ShipmentResponse": {
+		"successful": true,
+		"currentStatus": "IN TRANSIT",
+		"systemId":"4444",
+		"transitMode":"Air",
+		"sourceAirport":"LAX",
+		"destinationAirport":"JFK",
+		"trackingNumber": "{{jsonPath request.body '$.trackingNumber'}}",
+		"userFirstName": "John",
+		"userContactName": "John Smith",
+		"userEmail": "john.smith@fedex.com",
+		"estimatedShipmentWeight": "2 lbs",
+		"pickupAddress":"2, Cross Ave, Los Angeles, CA-91730",
+		"deliveryAddress":"10, Hudson Drive, NYC, NY-13324",
+		"shipmentPickupDate":"{{now offset='-24 hours' timezone='America/Chicago' format='yyyy-MM-dd'}}",
+		"shipmentDeliveryDate":"{{now offset='48 hours' timezone='America/Chicago' format='yyyy-MM-dd'}}"
+	}
+}

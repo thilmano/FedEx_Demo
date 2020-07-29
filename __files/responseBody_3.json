@@ -1,0 +1,17 @@
+{
+	"ShipmentResponse": {
+		"successful": true,
+		"currentStatus": "DELIVERED",
+		"systemId":"9999",
+		"transitMode":"Air",
+		"trackingNumber": "{{jsonPath request.body '$.trackingNumber'}}",
+		"userFirstName": "John",
+		"userContactName": "John Smith",
+		"userEmail": "john.smith@fedex.com",
+		"estimatedShipmentWeight": "2 lbs",
+		"pickupAddress":"2, Cross Ave, Los Angeles, CA-91730",
+		"deliveryAddress":"10, Hudson Drive, NYC, NY-13324",
+		"shipmentPickupDate":"{{now offset='-72 hours' timezone='America/Chicago' format='yyyy-MM-dd'}}",
+		"shipmentDeliveryDate":"{{now offset='0 hours' timezone='America/Chicago' format='yyyy-MM-dd'}}"
+	}
+}

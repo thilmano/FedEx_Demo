@@ -1,0 +1,30 @@
+{
+    "request": {
+        "urlPath" : "/api/v1/user",
+		"method" : "GET",
+		"queryParameters" : 
+			{
+			"id" : 
+				{
+				"matches" : "(.*)"
+				},
+			"account" :
+				{
+				"contains" : "ACC-001"
+				},
+			"active" :
+				{
+				"equalTo" : "Y"
+				}
+			}
+    },
+    "response": {
+		"bodyFileName": "responseBody_1.json",
+        "transformers": ["response-template"],
+	
+	"headers" : {
+      "Content-Type" : "application/json"
+				}
+	   
+    }
+}

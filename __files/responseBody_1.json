@@ -1,0 +1,16 @@
+{
+	"ShipmentResponse": {
+		"successful": true,
+		"currentStatus": "PICKED UP",
+		"systemId":"1111",
+		"shipmentPickupDate":"{{now timezone='America/Chicago' format='yyyy-MM-dd'}}",
+		"shipmentBookingDate":"{{now offset='-24 hours' timezone='America/Chicago' format='yyyy-MM-dd'}}",
+		"trackingNumber": "{{request.requestLine.query.trackingnumber}}",
+		"userFirstName": "John",
+		"userContactName": "John Smith",
+		"userEmail": "john.smith@fedex.com",
+		"estimatedShipmentWeight": "2 lbs",
+		"pickupAddress":"2, Cross Ave, Los Angeles, CA-91730",
+		"deliveryAddress":"10, Hudson Drive, NYC, NY-13324"
+	}
+}
